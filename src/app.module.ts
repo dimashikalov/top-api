@@ -11,8 +11,8 @@ import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/mongotest'),
     ConfigModule.forRoot(),
+    MongooseModule.forRoot('mongodb://localhost/mongotest'),
     AuthModule,
     TopPageModule,
     ProductModule,
